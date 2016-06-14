@@ -66,8 +66,7 @@ a {
 }
 
 #fullpage #section1 {
-  background: url("../image/ye1.jpg") no-repeat center center;
-  background-size: 100%;
+  background: url("../image/b1.jpg") no-repeat center center;
   background-size: 100% 100%;
   width: 100%;
   height: 100%;
@@ -89,7 +88,7 @@ a {
   width: 50%;
   margin: 30px auto;
   font-size: 46px;
-  color: #fff;
+  color: red;
   font-family: '微软雅黑';
   transition: transform .8s linear;
 }
@@ -132,6 +131,45 @@ a {
   position: absolute;
   left: 50%;
   bottom: 40px;
+}
+
+@media screen and (max-width: 1068px) {
+  #fullpage #section1 {
+    background: url("../image/b11.jpg") no-repeat center center;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  #fullpage #section1 .huan {
+    font-size: 33px;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  #fullpage #section1 {
+    background: url("../image/b12.jpg") no-repeat center center;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  #fullpage #section1 .huan {
+    font-size: 33px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #fullpage #section1 {
+    background: url("../image/b13.jpg") no-repeat center center;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  #fullpage #section1 .huan {
+    font-size: 33px;
+  }
 }
 
 #fullpage #section1.active .shou {
@@ -189,8 +227,8 @@ a {
 }
 
 #section2 .jianjie .circle {
-  width: 22%;
-  height: 39%;
+  width: 220px;
+  height: 220px;
   position: absolute;
   left: 0;
   right: 0;
@@ -322,6 +360,22 @@ a {
   color: orange;
 }
 
+#section2 .jianjie .xingqu .phone .you {
+  display: block;
+  position: absolute;
+  left: 50px;
+  top: 165px;
+  color: #ccc;
+  font-size: 30px;
+  transition: transform .8s linear 1.9s,opacity .8s ease 1.8s;
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+#section2 .jianjie .xingqu .phone .you:hover {
+  color: orange;
+}
+
 #section2 #xia {
   display: block;
   width: 30px;
@@ -330,6 +384,26 @@ a {
   position: absolute;
   left: 50%;
   bottom: 40px;
+}
+
+@media screen and (max-width: 1068px) {
+  #section2 {
+    background: url("../image/ye2.jpg") no-repeat center center;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  #section2 .jianjie .jieshao li {
+    font-size: 17px;
+  }
+  #section2 .jianjie .xingqu li {
+    font-size: 17px;
+  }
+}
+
+#section2.active h2 {
+  animation: zhuan .8s ease infinite;
 }
 
 #section2.active .circle {
@@ -366,12 +440,17 @@ a {
   opacity: 1;
 }
 
+#section2.active .xingqu .phone .you {
+  transform: none;
+  opacity: 1;
+}
+
 #section2.active #xia {
   animation: shanshuo .6s linear infinite alternate;
 }
 
 #section3 {
-  background: url("../image/ye1.jpg") no-repeat center center;
+  background: url("../image/b2.jpg") no-repeat center center;
   background-size: 100% 100%;
   width: 100%;
   height: 100%;
@@ -480,6 +559,10 @@ a {
   bottom: 40px;
 }
 
+#section3.active h2 {
+  animation: zhuan .8s ease infinite;
+}
+
 #section3.active .shijian1 {
   animation: zuochu .8s ease;
 }
@@ -504,7 +587,7 @@ a {
 }
 
 #section4 {
-  background: url("../image/ye1.jpg") no-repeat center center;
+  background: url("../image/b3.jpg") no-repeat center center;
   background-size: 100% 100%;
   width: 100%;
   height: 100%;
@@ -611,7 +694,7 @@ a {
   width: 0;
   height: 100%;
   background: #fff;
-  transition: width .8s ease 1s;
+  transition: width .8s ease .2s;
 }
 
 #section4 .duo .f3 {
@@ -651,7 +734,7 @@ a {
   width: 0;
   height: 100%;
   background: #fff;
-  transition: width .8s ease 1.8s;
+  transition: width .8s ease .2s;
 }
 
 #section4 .duo .f4 {
@@ -691,7 +774,7 @@ a {
   width: 0;
   height: 100%;
   background: #fff;
-  transition: width .8s ease 2.6s;
+  transition: width .8s ease .2s;
 }
 
 #section4 .duo .f5 {
@@ -731,7 +814,7 @@ a {
   width: 0;
   height: 100%;
   background: #fff;
-  transition: width .8s ease 3.4s;
+  transition: width .8s ease .2s;
 }
 
 #section4 .duo .f6 {
@@ -771,7 +854,7 @@ a {
   width: 0;
   height: 100%;
   background: #fff;
-  transition: width .8s ease 4.2s;
+  transition: width .8s ease .2s;
 }
 
 #section4 .duo .f7 {
@@ -811,7 +894,7 @@ a {
   width: 0;
   height: 100%;
   background: #fff;
-  transition: width .8s ease 5s;
+  transition: width .8s ease .2s;
 }
 
 #section4 #xia {
@@ -822,6 +905,10 @@ a {
   position: absolute;
   left: 50%;
   bottom: 40px;
+}
+
+#section4.active h2 {
+  animation: zhuan .8s ease infinite;
 }
 
 #section4.active .duo .f1 .tian {
@@ -854,4 +941,301 @@ a {
 
 #section4.active #xia {
   animation: shanshuo .6s linear infinite alternate;
+}
+
+#section5 {
+  background: url("../image/bb.jpg") no-repeat center center;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#section5 h2 {
+  display: inline-block;
+  width: 50px;
+  height: 150px;
+  position: absolute;
+  left: 50px;
+  top: 150px;
+  color: #fff;
+  font-size: 35px;
+}
+
+#section5 .zuopin {
+  width: 880px;
+  height: 880px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+#section5 .zuopin ul {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#section5 .zuopin ul li {
+  display: inline-block;
+  width: 30%;
+  height: 30%;
+  background: pink;
+  border-radius: 50%;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+#section5 .zuopin ul .p1 {
+  display: inline-block;
+  width: 30%;
+  height: 30%;
+  background: url("../image/jd.jpg") no-repeat center center;
+  background-size: 100% 100%;
+  border-radius: 50%;
+  transform: scale(1, 1);
+  transition: transform .5s ease .2s;
+}
+
+#section5 .zuopin ul .p1 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#section5 .zuopin ul .p1:hover {
+  transform: scale(1.2, 1.2);
+  border: 2px solid green;
+}
+
+#section5 .zuopin ul .p2 {
+  display: inline-block;
+  width: 30%;
+  height: 30%;
+  background: url("../image/qq.jpg") no-repeat center center;
+  background-size: 100% 100%;
+  border-radius: 50%;
+  transition: transform .5s ease .2s;
+}
+
+#section5 .zuopin ul .p2 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#section5 .zuopin ul .p2:hover {
+  transform: scale(1.2, 1.2);
+  border: 2px solid green;
+}
+
+#section5 .zuopin ul .p3 {
+  display: inline-block;
+  width: 30%;
+  height: 30%;
+  background: url("../image/du.jpg") no-repeat center center;
+  background-size: 100%;
+  border-radius: 50%;
+  transition: transform .5s ease .2s;
+}
+
+#section5 .zuopin ul .p3 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#section5 .zuopin ul .p3:hover {
+  transform: scale(1.2, 1.2);
+  border: 2px solid green;
+}
+
+#section5 .zuopin ul .p4 {
+  display: inline-block;
+  width: 30%;
+  height: 30%;
+  background: url("../image/lei.jpg") no-repeat center center;
+  background-size: 100%;
+  border-radius: 50%;
+  transition: transform .5s ease .2s;
+}
+
+#section5 .zuopin ul .p4 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#section5 .zuopin ul .p4:hover {
+  transform: scale(1.2, 1.2);
+  border: 2px solid green;
+}
+
+#section5 .zuopin ul .p5 {
+  display: inline-block;
+  width: 30%;
+  height: 30%;
+  background: url("../image/she.png") no-repeat center center;
+  background-size: 100%;
+  border-radius: 50%;
+  transition: transform .5s ease .2s;
+}
+
+#section5 .zuopin ul .p5 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#section5 .zuopin ul .p5:hover {
+  transform: scale(1.2, 1.2);
+  border: 2px solid green;
+}
+
+#section5 .zuopin ul .p6 {
+  display: inline-block;
+  width: 30%;
+  height: 30%;
+  background: url("../image/wei.jpg") no-repeat center center;
+  background-size: 100%;
+  border-radius: 50%;
+  transition: transform .5s ease .2s;
+}
+
+#section5 .zuopin ul .p6 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#section5 .zuopin ul .p6:hover {
+  transform: scale(1.2, 1.2);
+  border: 2px solid green;
+}
+
+#section5 .zuopin ul .p7 {
+  display: inline-block;
+  width: 30%;
+  height: 30%;
+  background: url("../image/guo.png") no-repeat center center;
+  background-size: 100%;
+  border-radius: 50%;
+  transition: transform .5s ease .2s;
+}
+
+#section5 .zuopin ul .p7 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#section5 .zuopin ul .p7:hover {
+  transform: scale(1.2, 1.2);
+  border: 2px solid green;
+}
+
+#section5 .zuopin ul .p8 {
+  display: inline-block;
+  width: 30%;
+  height: 30%;
+  background: url("../image/yin.jpg") no-repeat center center;
+  background-size: 100%;
+  border-radius: 50%;
+  transition: transform .5s ease .2s;
+}
+
+#section5 .zuopin ul .p8 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#section5 .zuopin ul .p8:hover {
+  transform: scale(1.2, 1.2);
+  border: 2px solid green;
+}
+
+#section5 .zuopin ul .p9 {
+  display: inline-block;
+  width: 30%;
+  height: 30%;
+  background: url("../image/qi.jpg") no-repeat center center;
+  background-size: 100%;
+  border-radius: 50%;
+  transition: transform .5s ease .2s;
+}
+
+#section5 .zuopin ul .p9 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#section5 .zuopin ul .p9:hover {
+  transform: scale(1.2, 1.2);
+  border: 2px solid green;
+}
+
+#section5 .ma {
+  position: absolute;
+  right: 0;
+  bottom: 100px;
+  width: 100px;
+  height: 120px;
+}
+
+#section5 .ma .sao {
+  width: 100%;
+  height: 50px;
+  font-size: 30px;
+  line-height: 50px;
+  color: #333;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  text-align: center;
+}
+
+#section5 .ma .sao:hover {
+  color: blue;
+  border: 2px solid orange;
+}
+
+#section5 .ma .sao:hover .erwei {
+  display: block;
+}
+
+#section5 .ma .sao .erwei {
+  display: none;
+  position: absolute;
+  right: 60px;
+  bottom: 130px;
+  width: 132px;
+  height: 132px;
+  background: url("../image/ma.png");
+  background-size: 100% 100%;
+}
+
+#section5 .ma .ding {
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  line-height: 50px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  text-align: center;
+}
+
+#section5 .ma .ding a {
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  color: #333;
+}
+
+#section5.active h2 {
+  animation: zhuan .8s ease infinite;
 }
