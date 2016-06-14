@@ -239,6 +239,11 @@ a {
   transition: transform .8s ease;
 }
 
+#section2 .jianjie .circle img {
+  width: 100%;
+  height: 100%;
+}
+
 #section2 .jianjie .jieshao {
   display: inline-block;
   width: 49.8%;
