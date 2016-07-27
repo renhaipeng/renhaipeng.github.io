@@ -16,8 +16,6 @@ a{
 }*/
 $medium:1068px;
 $small:736px;
-$phone5:320px;
-$phone6:375px;
 $image-path: '../image/';
 $images: ye1;
 @keyframes luo{
@@ -140,7 +138,41 @@ $images: ye1;
 			.huan{
 				font-size: 33px;
 			}
-		
+
+		}
+		#section2{
+			background: url($image-path +'ye2.jpg' ) no-repeat center center;
+			background-size: 100% 100%;
+			width: 100%;
+			height: 100%;
+			position: relative;
+			.jianjie{
+				.jieshao{
+					li{
+						font-size: 22px;
+					}
+				}
+				.xingqu{
+					.phone{
+						li{
+							font-size: 22px;
+						}
+					}
+
+				}
+			}
+		}
+		#section3{
+			.shijian1{
+				.time{
+					font-size: 18px;
+				}
+			}
+			.gong1{
+				p{
+					font-size: 23px;
+				}
+			}
 		}
 	}
 }
@@ -153,12 +185,62 @@ $images: ye1;
 			height: 100%;
 			position: relative;			
 			.huan{
+				font-size: 30px;
+			}
+		}
+			#section2{
+		 background: url($image-path +'ye3.jpg' ) no-repeat center center;
+		 background-size: 100% 100%;
+		 width: 100%;
+		 height: 100%;
+		 position: relative;
+		 .jianjie{
+		 	.jieshao{
+		 		li{
+		 			font-size: 14px;
+		 		}
+		 	}
+		 	.xingqu{
+		 		.phone{
+		 			li{
+		 			font-size: 14px;
+		 		}
+		 		}
+		 		
+		 	}
+		 }
+	}
+	}
+}
+/*@media screen and(max-width: 414px){
+	#fullpage{
+		#section1{
+			background: url($image-path + 'b15.jpg' ) no-repeat center center;
+			background-size: 100% 100%;
+			width: 100%;
+			height: 100%;
+			position: relative;			
+			.huan{
 				font-size: 33px;
 			}
 		}
 	}
 }
-@media screen and(max-width: $phone5){
+@media screen and(max-width: 375px){
+	#fullpage{
+		#section1{
+			background: url($image-path + 'b14.jpg' ) no-repeat center center;
+			background-size: 100% 100%;
+			width: 100%;
+			height: 100%;
+			position: relative;			
+			.huan{
+				font-size: 33px;
+			}
+		}
+	}
+}
+@media screen and(max-width: 320px){
 	#fullpage{
 		#section1{
 			background: url($image-path + 'b13.jpg' ) no-repeat center center;
@@ -171,7 +253,8 @@ $images: ye1;
 			}
 		}
 	}
-}
+}*/
+
 #fullpage{
 	#section1.active{
 		.shou{
@@ -252,9 +335,12 @@ $images: ye1;
                  .ming{
                  	display: block;
                  	position: absolute;
-                 	left: 160px;
+                 	left: 0;
+                 	right: 0;
+                 	margin: auto;
                  	top: 45px;
                  	font-size: 30px;
+                 	width: 50%;
                  	color: #fff;
                  	transition: transform .8s linear,opacity .8s ease .2s;
                  	transform: translateX(-100%);
@@ -266,10 +352,13 @@ $images: ye1;
                  .age{
                  	display: block;
                  	position: absolute;
-                 	left: 160px;
+                 	left: 0;
+                 	right: 0;
+                 	margin: auto;
                  	top: 105px;
                  	font-size: 30px;
                  	color: #fff;
+                 	width: 50%;
                  	transition: transform .8s linear .6s,opacity .8s ease 1s;
                  		transform: translateX(-100%);
                  	opacity: 0;
@@ -280,10 +369,13 @@ $images: ye1;
                  .xueli{
                  	display: block;
                  	position: absolute;
-                 	left: 160px;
+                 	left: 0;
+                 	right: 0;
+                 	margin: auto;
                  	top: 165px;
                  	font-size: 30px;
                  	color: #fff;
+                 	width: 50%;
                  	transition: transform .8s linear 1.4s,opacity .8s ease 1.8s;
                  	transform: translateX(-100%);
                  	opacity: 0;
@@ -294,8 +386,11 @@ $images: ye1;
                  .school{
                  	display: block;
                  	position: absolute;
-                 	left: 160px;
+                 	left: 0;
+                 	right: 0;
+                 	margin: auto;
                  	top: 225px;
+                 	width: 50%;
                  	font-size: 30px;
                  	color: #fff;
                  	transition: transform .8s linear 2.2s,opacity .8s ease 2.6s;
@@ -320,10 +415,13 @@ $images: ye1;
 		 		 	.dian{
 		 		 		display: block;
 		 		 		position: absolute;
-		 		 		left: 50px;
+		 		 		left: 0;
+                 	right: 0;
+                 	margin: auto;
 		 		 		top: 45px;
 		 		 		color: #ccc;
 		 		 		font-size: 30px;
+		 		 		width: 80%;
 		 		 		transition: transform .8s linear .3s,opacity .8s ease .2s;
 	                 	transform: translateX(100%);
 	                 	opacity: 0;
@@ -334,9 +432,12 @@ $images: ye1;
 		 		 	.qq{
 		 		 		display: block;
 		 		 		position: absolute;
-		 		 		left: 50px;
+		 		 		left: 0;
+                 	right: 0;
+                 	margin: auto;
 		 		 		top: 105px;
 		 		 		color: #ccc;
+		 		 		width: 80%;
 		 		 		font-size: 30px;
 		 		 		transition: transform .8s linear 1.1s,opacity .8s ease 1s;
 	                 	transform: translateX(100%);
@@ -348,9 +449,12 @@ $images: ye1;
 		 		 	.you{
 		 		 		display: block;
 		 		 		position: absolute;
-		 		 		left: 50px;
+		 		 		left: 0;
+                 	right: 0;
+                 	margin: auto;
 		 		 		top: 165px;
 		 		 		color: #ccc;
+		 		 		width: 80%;
 		 		 		font-size: 30px;
 		 		 		transition: transform .8s linear 1.9s,opacity .8s ease 1.8s;
 	                 	transform: translateX(100%);
@@ -372,9 +476,10 @@ $images: ye1;
 			bottom: 40px;
 	 }
 }
-@media screen and(max-width: $medium){
+
+/*@media screen and(max-width: 414px){
 	#section2{
-		 background: url($image-path +'ye2.jpg' ) no-repeat center center;
+		 background: url($image-path +'ye4.jpg' ) no-repeat center center;
 		 background-size: 100% 100%;
 		 width: 100%;
 		 height: 100%;
@@ -382,17 +487,20 @@ $images: ye1;
 		 .jianjie{
 		 	.jieshao{
 		 		li{
-		 			font-size: 17px;
+		 			font-size: 8px;
 		 		}
 		 	}
 		 	.xingqu{
-		 		li{
-		 			font-size: 17px;
+		 		.phone{
+		 			li{
+		 			font-size: 8px;
 		 		}
+		 		}
+		 		
 		 	}
 		 }
 	}
-}
+}*/
 #section2.active{
 	h2{
 		animation: zhuan .8s ease infinite ;
@@ -506,10 +614,11 @@ $images: ye1;
 				position: absolute;
 				left: 0;
 				right: 0;
-				top: 80px;
-				float: left;
+				top: 130px;
+				margin: auto;
 			   color: #fff;
 			   font-size: 30px;
+			    width: 90%;
 			   transition: transform .8s ease 1s,opacity .8s ease 1s;
 			  transform: translateX(-100%);
 			  opacity: 0;
@@ -518,9 +627,11 @@ $images: ye1;
 				position: absolute;
 				left: 0;
 				right: 0;
-				top: 130px;
+				top: 260px;
+				margin: auto;
 			   color: #fff;
 			   font-size: 30px;
+			   width: 90%;
 			   transition: transform .8s ease 1.9s,opacity .8s ease 1.9s;
 			  transform: translateX(100%);
 			  opacity: 0;
